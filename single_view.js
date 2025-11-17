@@ -2,7 +2,7 @@ let data;
 let country;
 let flag;
 let sigla;
-let maxRadius = 140;
+let maxRadius = 100;
 let minRadius = 250;
 
 

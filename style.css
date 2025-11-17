@@ -6,3 +6,15 @@ html, body {
 canvas {
   display: block;
 }
+
+a {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 56, 76, 0.3);
+  text-decoration: none;
+}

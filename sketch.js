@@ -255,6 +255,7 @@ function drawCircles() {
 
 function drawFlags() {
   let drawn = 0;
+  cursor(ARROW);
   for (let i = 0; i < data.getRowCount(); i++) {
     let value = data.getNum(i, "value");
     let uncertainty = data.getNum(i, "uncertainty");
@@ -270,6 +271,7 @@ function drawFlags() {
     if(d < 8){
       hovered = true;
       flagDim = 25;
+      cursor(HAND);
     }
 
     if (sigla && flags[sigla]) {
@@ -305,7 +307,6 @@ function drawFlags() {
     }
 
     
-
     flagDim = 10;
     hovered = false;
   }
