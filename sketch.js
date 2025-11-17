@@ -296,7 +296,15 @@ function drawFlags() {
       textStyle("normal");
       textAlign(CENTER, CENTER);
       text(country, x, y + 25);
+
+      //interazione: cambio pagina e viz specifica
+      if(mouseIsPressed){
+      let newURL = "page.html?country=" + country;
+      window.location.href = newURL;
     }
+    }
+
+    
 
     flagDim = 10;
     hovered = false;
